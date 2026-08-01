@@ -38,7 +38,8 @@ usdjpy-donchian/
 │
 └── reports/
     ├── figures/                # Histograms & equity curves
-    └── research_summary.md          # Overview of metrics & p-values
+    ├── archived/               # Results from my run, used in FULL_REPORT
+    └── research_summary.md     # Overview of metrics & p-values
 ```
 
 ## Setup & Execution
