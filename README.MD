@@ -4,10 +4,10 @@ While the Donchian breakout is a classic systematic rule, the primary focus of t
 
 ## Key Features
 
-- **FX Microstructure Modeling:** Replaces naive flat fees with a realistic 0.5 pip ECN spread/commission model and a 2% annualized Cost of Carry (Swap proxy) to account for the USD/JPY interest rate differential.
+- **FX Microstructure Modelling:** Replaces naive flat fees with a realistic 0.5 pip ECN spread/commission model and a 2% annualised Cost of Carry (Swap proxy) to account for the USD/JPY interest rate differential.
 - **24/5 Session Permutations:** A custom Monte Carlo permutation engine that preserves intrabar volatility, fat tails, and explicitly isolates and shuffles weekend gaps (Friday close $\to$ Monday open) independently from weekday overnight gaps.
-- **Expanding Walk-Forward:** Re-optimizes the lookback parameter monthly using an expanding training window, preserving long-term macroeconomic regime context.
-- **"Fair Competition" Optimization:** Forces 1,000 synthetic noise datasets through the exact same 6-parameter optimization grid as the real data, generating a mathematically pure null distribution to calculate true p-values.
+- **Expanding Walk-Forward:** Re-optimises the lookback parameter monthly using an expanding training window, preserving long-term macroeconomic regime context.
+- **"Fair Competition" Optimization:** Forces 1,000 synthetic noise datasets through the exact same 6-value optimisation grid as the real data, generating a mathematically pure null distribution to calculate true p-values.
 
 ## Repository Structure
 
@@ -82,8 +82,10 @@ fx_params:
 optimization:
   lookback_grid: [10, 20, 50, 100, 150, 200]
 
+# If you are testing it out, 1000 permutations will take about 20-30 min 
+# Main bottleneck is walk_forward_runs due to expanding window iterations
+# Recommended settings is (1000, 200) for lightweight testing. 
 permutation:             
   in_sample_runs: 1000          
   walk_forward_runs: 1000
-# If you are trying it out, 1000 permutations will take about 20-30 min lol, though main bottleneck is walk_forward_runs due to expanding window iterations, recommend (1000, 200) for lightweight testing.
 ```
