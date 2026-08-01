@@ -1,0 +1,10 @@
+[project]
+name = "gold-donchian-research"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas", "numpy", "scipy", "matplotlib", "PyYAML", "pytest", "jupyter"
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
