@@ -82,8 +82,10 @@ fx_params:
 optimization:
   lookback_grid: [10, 20, 50, 100, 150, 200]
 
+# If you are testing it out, 1000 permutations will take about 20-30 min 
+# Main bottleneck is walk_forward_runs due to expanding window iterations
+# Recommended settings is (1000, 200) for lightweight testing. 
 permutation:             
   in_sample_runs: 1000          
   walk_forward_runs: 1000
-# If you are trying it out, 1000 permutations will take about 20-30 min lol, though main bottleneck is walk_forward_runs due to expanding window iterations, recommend (1000, 200) for lightweight testing.
 ```
