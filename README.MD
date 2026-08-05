@@ -67,12 +67,13 @@ python3 -m scrips.run_benchmark
 
 ## Outputs
 Upon completion, the pipeline generates:
-1. **`reports/final_report.md`**: A comprehensive markdown file containing IS/OOS performance metrics (Sharpe, Sortino, Profit Factor, Max Drawdown, Annualized Return) and statistical p-values.
+1. **`reports/research_summary.md`**: A comprehensive markdown file containing IS/OOS performance metrics (Sharpe, Sortino, Profit Factor, Max Drawdown, Annualized Return) and statistical p-values.
 2. **`reports/figures/`**: Four visualizations:
    - IS Sharpe Distribution (Real vs. Permutations)
    - IS Equity Curves (Real vs. Permutation cloud)
    - OOS Sharpe Distribution (Real vs. Permutations)
    - OOS Equity Curves (Real vs. Permutation cloud)
+3. **`reports/benchmark_summary.md`**: A markdown file containing IS/OOS performance metrics (Sharpe, Sortino, Profit Factor, Max Drawdown, Annualized Return).
 
 ## Configuration
 All research parameters can be adjusted in `config.yaml`:
