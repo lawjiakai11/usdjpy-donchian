@@ -30,7 +30,7 @@ usdjpy-donchian/
 │   └── validation.py           # Permutation engine & walk-forward logic
 │
 ├── scripts/
-│   └── run_research.py         # Main research script
+│   ├── run_research.py         # Main research script
 |   └── run_benchmark.py        # Buy & Hold benchmark script
 │
 ├── tests/
@@ -40,7 +40,7 @@ usdjpy-donchian/
 └── reports/
     ├── figures/                # Histograms & equity curves
     ├── archived/               # Results from my run, used in FULL_REPORT
-    └── research_summary.md     # Overview of metrics & p-values
+    ├── research_summary.md     # Overview of metrics & p-values
     └── benchmark_summary.md    # Benchmark performance summary
 ```
 
