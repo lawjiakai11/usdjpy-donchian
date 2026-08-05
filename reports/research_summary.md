@@ -28,4 +28,4 @@
 - **Walk-Forward P-Value:** 0.0480 (Null: Sharpe from 1000 permuted WF runs >= real OOS Sharpe)
 
 ## Conclusion
-The strategy exhibits insufficient evidence of persistent momentum after accounting for multiple comparisons, FX spreads, and swap carry.
+The strategy exhibits sufficient evidence of persistent momentum after accounting for multiple comparisons, FX spreads, and swap carry.

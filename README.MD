@@ -59,7 +59,8 @@ pytest
 ### 3. Execute the Research Pipeline
 Run the main script to execute the full optimization, permutation testing, and report generation:
 ```bash
-python -m scripts.run_research
+python3 -m scripts.run_research
+python3 -m scrips.run_benchmark
 ```
 
 ## Outputs
