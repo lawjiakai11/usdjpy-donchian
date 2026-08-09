@@ -31,7 +31,7 @@ usdjpy-donchian/
 │
 ├── scripts/
 │   ├── run_research.py         # Main research script
-|   └── run_benchmark.py        # Buy & Hold benchmark script
+|   └── run_benchmark.py        # Passive Long Carry benchmark script
 │
 ├── tests/
 │   ├── test_core.py            # Tests signal logic and metrics
